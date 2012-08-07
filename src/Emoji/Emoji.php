@@ -529,7 +529,7 @@ class Emoji
     public function getEmoji($name)
     {
         if (in_array($name,$this->emoji)) {
-            $format = '<img src="%s%s.png" title=":%s:" alt=":%s:" width="20" height="20" align="absmiddle"/>';
+            $format = '<img src="%s%s.png" title=":%s:" alt=":%s:" width="20" height="20" style="vertical-align: middle" />';
             return sprintf($format, $this->options['emoji.path'], $name,$name,$name);
         } else {
             return false;
